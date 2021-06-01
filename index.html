@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="display-container">
+        <input id="input" type="text" value="00000000" disabled />
+      </div>
+      <div class="keypad-container">
+        <div>
+          <button
+            id="clr"
+            class="reset-button"
+            onclick="resetKeyClickHandler()"
+          >
+            AC
+          </button>
+        </div>
+        <div class="key-row">
+          <button id="block1" onclick="numKeyClickHandler(1)">1</button>
+          <button id="block2" onclick="numKeyClickHandler(2)">2</button>
+          <button id="block3" onclick="numKeyClickHandler(3)">3</button>
+          <button id="plus" onclick="operatorKeyClickHandler('+')">+</button>
+        </div>
+        <div class="key-row">
+          <button id="block4" onclick="numKeyClickHandler(4)">4</button>
+          <button id="block5" onclick="numKeyClickHandler(5)">5</button>
+          <button id="block6" onclick="numKeyClickHandler(6)">6</button>
+          <button id="minus" onclick="operatorKeyClickHandler('-')">-</button>
+        </div>
+        <div class="key-row">
+          <button id="block7" onclick="numKeyClickHandler(7)">7</button>
+          <button id="block8" onclick="numKeyClickHandler(8)">8</button>
+          <button id="block9" onclick="numKeyClickHandler(9)">9</button>
+          <button id="multiply" onclick="operatorKeyClickHandler('*')">
+            *
+          </button>
+        </div>
+        <div class="key-row">
+          <button id="dot" onclick="numKeyClickHandler('.')">.</button>
+          <button id="block0" onclick="numKeyClickHandler(0)">0</button>
+          <button id="ans" onclick="resultKeyClickHandler()">=</button>
+          <button id="divide" onclick="operatorKeyClickHandler('/')">/</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
